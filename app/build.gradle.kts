@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     id("de.mannodermaus.android-junit5") version "1.10.0.0"
+    id("io.qameta.allure") version "3.0.0"
 }
 
 android {
@@ -40,7 +41,13 @@ android {
             it.useJUnitPlatform()
         }
     }
+    sourceSets {
+        getByName("test") {
+            resources.srcDir("src/test/resources")
+        }
+    }
 }
+
 
 dependencies {
     implementation(libs.appcompat)
@@ -51,4 +58,5 @@ dependencies {
     testRuntimeOnly(libs.junit.platform.launcher)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    testImplementation("io.qameta.allure:allure-junit5:2.24.0")
 }

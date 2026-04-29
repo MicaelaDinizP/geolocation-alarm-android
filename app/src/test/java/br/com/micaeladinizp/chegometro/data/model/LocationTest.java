@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("Location Tests")
-class LocationTest {
+public class LocationTest {
     private static final double VALID_LAT = 10.0;
     private static final double VALID_LNG = 20.0;
     private static final String VALID_NAME = "Test";
