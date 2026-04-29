@@ -26,7 +26,7 @@ This project is currently in its early stage.
 - **Platform:** Android  
 - **minSdk:** 26  
 - **Architecture:** MVVM (planned / in progress)  
-- **Testing:** JUnit 5  
+- **Testing:** JUnit 5 + Allure Reports
 
 ---
 ## 📁 Project Structure
@@ -84,13 +84,45 @@ geolocation-alarm-app/
 - **Future Work:** Integration and instrumentation tests
 
 ---
+## 📊 Test Reports (Allure)
+
+This project uses **Allure Report** to generate rich and interactive test reports.
+
+Allure provides:
+- 📈 Visual test execution overview  
+- ❌ Detailed failure analysis  
+- 🧩 Structured test steps  (planned)
+- 📎 Attachments (logs, screenshots, etc.) (planned)  
+
+---
+### ⚠️ Prerequisites
+
+Install Allure Commandline to view test reports:  
+https://github.com/allure-framework/allure2/releases
+
+---
+
+### ▶️ How to generate the report
+
+
+Run the tests and generate allure report:
+
+```bash
+./gradlew testDebugUnitTest --rerun-tasks
+```
+Open the report in your browser:
+```bash
+allure serve app/build/allure-results
+```
+---
 
 ## 🌿 Branching Strategy
 
 - `main` → stable code  
 - `feature/*` → new features  
 - `fix/*` → bug fixes  
-- `docs/*` → documentation  
+- `docs/*` → documentation
+- `chore/*` → maintenance / setup tasks 
 
 ---
 
