@@ -42,6 +42,7 @@ geolocation-alarm-app/
 │   │   │   │   │       └── Trip.java
 │   │   │   │   │       └── Location.java
 │   │   │   │   │       └── RouteResult.java
+│   │   │   │   │       └── TripState.java
 │   │   │   │   ├── ui/
 |   |   |   |   ├── domain/
 |   |   |   |   ├── app/
@@ -142,7 +143,7 @@ This project follows **Conventional Commits**:
 
 ## 📌 Roadmap
 
-- [ ] Core trip model  
+- [x] Core trip model  
 - [ ] Route calculation  
 - [ ] Alarm trigger logic  
 - [ ] Background tracking  
