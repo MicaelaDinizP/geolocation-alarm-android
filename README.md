@@ -43,6 +43,11 @@ geolocation-alarm-app/
 │   │   │   │   │       └── Location.java
 │   │   │   │   │       └── RouteResult.java
 │   │   │   │   │       └── TripState.java
+│   │   │   │   │   └── remote/
+│   │   │   │   │       └── OsrmResponseParser.java
+│   │   │   │   │       └── OsrmRouteClient.java
+│   │   │   │   │       └── RouteClient.java
+│   │   │   │   │   └── RouteCallback
 │   │   │   │   ├── ui/
 |   |   |   |   ├── domain/
 |   |   |   |   ├── app/
